@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>사주선물 — 정적 미리보기</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  ink:'#1a1030', cosmos:'#2d1b4e', gold:'#e8c37a', mystic:'#a78bfa'
+}, fontFamily: { serif:["'Nanum Myeongjo'","serif"] } } } };
+</script>
+<style>
+  body{
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #3b2566 0%, transparent 60%),
+      radial-gradient(800px 500px at 90% 20%, #1e2a5e 0%, transparent 55%),
+      linear-gradient(160deg,#140a24 0%,#1a1030 55%,#0f0820 100%);
+    background-attachment:fixed; min-height:100vh; color:#f4ecff;
+  }
+  .starfield::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:
+      radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.8), transparent),
+      radial-gradient(1px 1px at 70% 60%, rgba(255,255,255,.6), transparent),
+      radial-gradient(1.5px 1.5px at 40% 80%, rgba(232,195,122,.7), transparent),
+      radial-gradient(1px 1px at 85% 15%, rgba(255,255,255,.5), transparent),
+      radial-gradient(1px 1px at 10% 70%, rgba(167,139,250,.6), transparent);}
+  .card-3d{perspective:1200px}
+  .card-inner{position:relative;width:100%;height:100%;transition:transform .7s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+  .card-inner.flipped{transform:rotateY(180deg)}
+  .card-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+  .card-back{transform:rotateY(180deg)}
+  @keyframes shuffle{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}
+  @keyframes floatUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
+  @keyframes glow{0%,100%{opacity:.6}50%{opacity:1}}
+  .a-shuffle{animation:shuffle 1.2s ease-in-out infinite}
+  .a-floatUp{animation:floatUp .6s ease-out forwards}
+  .a-glow{animation:glow 2s ease-in-out infinite}
+</style>
+</head>
+<body class="starfield font-serif">
+<div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-10">
+
+  <!-- STEP 1: INPUT -->
+  <section id="step-input" class="w-full max-w-md mx-auto a-floatUp">
+    <div class="text-center mb-8">
+      <div class="text-5xl mb-3">🔮</div>
+      <h1 class="text-3xl font-extrabold text-gold">사주선물</h1>
+      <p class="mt-2 text-sm text-mystic/90">생년월일에 담긴 올해의 기운으로<br/>딱 맞는 선물을 골라드려요</p>
+    </div>
+    <div class="rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 p-6 shadow-2xl">
+      <label class="block text-sm text-gold/90 mb-2">받는 사람 생년월일 (양력)</label>
+      <input type="date" value="1997-03-15" class="w-full rounded-xl bg-cosmos/60 border border-white/15 px-4 py-3 text-lg text-white outline-none" />
+      <div class="mt-4 text-xs text-mystic">▸ 보내는 사람 생일도 넣어 궁합 보기 (선택)</div>
+      <label class="block text-sm text-gold/90 mt-6 mb-2">예산</label>
+      <div class="grid grid-cols-3 gap-2">
+        <button class="rounded-xl py-3 border bg-white/5 border-white/15 text-white/80"><div class="text-sm">~1만원</div><div class="text-[10px] opacity-70">가볍게</div></button>
+        <button class="rounded-xl py-3 border bg-gold text-ink border-gold font-bold"><div class="text-sm">1~3만원</div><div class="text-[10px] opacity-70">무난하게</div></button>
+        <button class="rounded-xl py-3 border bg-white/5 border-white/15 text-white/80"><div class="text-sm">3~5만원</div><div class="text-[10px] opacity-70">정성껏</div></button>
+      </div>
+      <button onclick="go()" class="mt-6 w-full rounded-xl bg-gradient-to-r from-gold to-amber-400 text-ink font-extrabold py-4 text-lg">운세 카드 펼치기 ✨</button>
+    </div>
+  </section>
+
+  <!-- STEP 2: LOADING -->
+  <section id="step-loading" class="hidden flex-col items-center justify-center a-floatUp">
+    <div class="relative h-56 w-56 flex items-center justify-center" id="shuffle"></div>
+    <p class="mt-8 text-mystic a-glow text-center">올해의 기운을 읽는 중…</p>
+  </section>
+
+  <!-- STEP 3: RESULT -->
+  <section id="step-result" class="hidden w-full max-w-md mx-auto space-y-5 a-floatUp pb-10">
+    <!-- narrative -->
+    <div class="rounded-3xl bg-white/5 backdrop-blur-md border border-gold/20 p-6 shadow-2xl">
+      <div class="flex items-center gap-3">
+        <div class="text-4xl">🔥</div>
+        <div><div class="text-xs text-mystic">일주 · 나의 캐릭터</div>
+          <div class="text-2xl font-extrabold text-gold">병진일주</div></div>
+        <span class="ml-auto text-[11px] px-2.5 py-1 rounded-full border bg-white/10 text-white/70 border-white/20">무난한 흐름</span>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-2 text-[11px]">
+        <span class="px-2.5 py-1 rounded-full border bg-cosmos/50 text-white/80 border-white/15">물고기자리</span>
+        <span class="px-2.5 py-1 rounded-full border bg-cosmos/50 text-white/80 border-white/15">소띠</span>
+        <span class="px-2.5 py-1 rounded-full border bg-cosmos/50 text-white/80 border-white/15">생명수 8</span>
+        <span class="px-2.5 py-1 rounded-full border bg-cosmos/50 text-white/80 border-white/15">오행 화</span>
+        <span class="px-2.5 py-1 rounded-full border bg-gold/20 text-gold border-gold/40">보완 목</span>
+      </div>
+      <p class="mt-5 text-[15px] leading-7 text-white/90">병진일에 태어난 당신은 타오르는 불꽃 같은 열정의 기운을 품은 물고기자리 소띠. 2026 병오년의 기운은 무난해, 스스로 만드는 흐름이 중요한 해입니다. 올해는 목(木)의 기운을 더해주면 균형이 살아나요.</p>
+    </div>
+
+    <div>
+      <div class="text-center text-sm text-mystic mb-3">당신을 위한 선물 3종 · 카드를 탭해보세요 🎴</div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="giftgrid"></div>
+    </div>
+
+    <!-- share card -->
+    <div>
+      <div class="rounded-3xl p-6 border border-gold/30" style="background:linear-gradient(160deg,#241645,#140a24)">
+        <div class="text-center">
+          <div class="text-3xl">🔥✨</div>
+          <div class="mt-1 text-xs text-mystic">2026 병오년 · 나의 선물 운세</div>
+          <div class="text-2xl font-extrabold text-gold mt-1">병진일주 · 소띠</div>
+          <div class="text-[11px] text-white/60 mt-1">물고기자리 · 생명수 8 · 보완오행 목</div>
+        </div>
+        <div class="mt-5 space-y-2" id="sharelist"></div>
+        <div class="mt-5 text-center text-[10px] text-gold/60 tracking-widest">사주선물 · SAJU GIFT</div>
+      </div>
+      <button class="mt-4 w-full rounded-xl bg-white/10 border border-white/20 text-white font-bold py-3">🖼️ 카드 이미지로 저장·공유</button>
+    </div>
+
+    <button onclick="reset()" class="w-full text-center text-sm text-mystic py-2">← 다른 생일로 다시 보기</button>
+    <p class="text-center text-[10px] text-white/30">* 정적 미리보기 — 실제 앱은 여기에 Claude AI 코멘트가 들어갑니다</p>
+  </section>
+</div>
+
+<script>
+const PICKS = [
+  { cat:"다육·미니화분", name:"테이블 야자 공기정화 화분", ohaeng:["목","토"], reason:"목·토 기운의 테이블 야자 — 부족한 목(木) 기운을 채워 성장의 흐름을 북돋아요.", link:"https://gift.kakao.com/search/공기정화식물" },
+  { cat:"원두·드립백", name:"스페셜티 원두 기프트", ohaeng:["화","목"], reason:"화·목이 어우러진 원두 — 열정(화)은 살리고 보완할 목 기운까지 함께 채워줘요.", link:"https://gift.kakao.com/search/스페셜티원두" },
+  { cat:"꽃다발", name:"계절 꽃다발", ohaeng:["목"], reason:"순수한 목(木) 기운의 꽃다발 — 감성형 물고기자리에게 딱 맞는 한 아름.", link:"https://gift.kakao.com/search/꽃다발" },
+];
+const TIER="1~3만원";
+
+// 셔플 카드 5장 생성
+const sh=document.getElementById('shuffle');
+for(let i=0;i<5;i++){
+  const d=document.createElement('div');
+  d.className="absolute h-40 w-28 rounded-2xl border border-gold/40 bg-gradient-to-br from-cosmos to-ink shadow-xl a-shuffle flex items-center justify-center text-3xl text-gold/70";
+  d.style.animationDelay=(i*0.15)+"s";
+  d.style.transform=`translateX(${(i-2)*14}px) rotate(${(i-2)*6}deg)`;
+  d.style.zIndex=5-Math.abs(i-2);
+  d.textContent="✦";
+  sh.appendChild(d);
+}
+
+// 선물 카드 렌더
+const grid=document.getElementById('giftgrid');
+PICKS.forEach((p,i)=>{
+  const wrap=document.createElement('div');
+  wrap.className="card-3d h-64 a-floatUp cursor-pointer select-none";
+  wrap.style.animationDelay=(i*0.12)+"s";
+  wrap.innerHTML=`
+    <div class="card-inner">
+      <div class="card-face rounded-2xl border border-gold/30 bg-gradient-to-br from-cosmos to-ink p-4 flex flex-col items-center justify-center text-center shadow-xl">
+        <div class="text-xs text-mystic">Pick ${i+1}</div>
+        <div class="my-3 text-4xl">🎴</div>
+        <div class="text-sm text-gold font-bold">${p.cat}</div>
+        <div class="mt-1 text-[11px] text-white/50">탭하면 추천 이유가 열려요</div>
+        <div class="mt-3 flex gap-1">${p.ohaeng.map(o=>`<span class="text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-white/70">${o}</span>`).join("")}</div>
+      </div>
+      <div class="card-face card-back rounded-2xl border border-gold/50 p-4 flex flex-col shadow-xl" style="background:linear-gradient(160deg,#2a1c4d,#1c1436)">
+        <div class="text-sm font-bold text-gold leading-snug">${p.name}</div>
+        <div class="text-[10px] text-white/50 mt-0.5">${p.cat} · ${TIER}</div>
+        <p class="mt-2 text-[12px] leading-5 text-white/85 flex-1">${p.reason}</p>
+        <a href="${p.link}" target="_blank" onclick="event.stopPropagation()" class="mt-2 block text-center rounded-lg bg-[#FEE500] text-[#3c1e1e] text-sm font-bold py-2">카카오 선물하기 →</a>
+      </div>
+    </div>`;
+  wrap.onclick=()=>wrap.querySelector('.card-inner').classList.toggle('flipped');
+  grid.appendChild(wrap);
+});
+
+// 공유카드 리스트
+const sl=document.getElementById('sharelist');
+PICKS.forEach((p,i)=>{
+  const row=document.createElement('div');
+  row.className="flex items-center gap-3 rounded-xl bg-white/5 border border-white/10 px-3 py-2";
+  row.innerHTML=`<div class="text-gold font-bold text-sm">${i+1}</div><div class="text-sm text-white/90 font-semibold flex-1">${p.name}</div><div class="text-[10px] text-white/50">${p.cat}</div>`;
+  sl.appendChild(row);
+});
+
+function show(id){for(const s of ['step-input','step-loading','step-result']){const el=document.getElementById(s);el.classList.toggle('hidden',s!==id);el.classList.toggle('flex',s===id&&s==='step-loading');}}
+function go(){show('step-loading');setTimeout(()=>show('step-result'),1600);}
+function reset(){show('step-input');}
+</script>
+</body>
+</html>
