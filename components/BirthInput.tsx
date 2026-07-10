@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { PriceTier } from "@/types";
 
 const TIERS: Array<{ key: PriceTier; label: string; sub: string }> = [
@@ -20,6 +20,11 @@ export default function BirthInput({
   const [compatMode, setCompatMode] = useState(false);
   const [tier, setTier] = useState<PriceTier>("1to3");
   const [error, setError] = useState("");
+
+  // URL 프리셋(?b=)이 마운트 후 비동기로 도착하므로, 도착 시 입력칸에 반영
+  useEffect(() => {
+    if (initialBirth) setReceiver(initialBirth);
+  }, [initialBirth]);
 
   const valid = /^\d{4}-\d{2}-\d{2}$/.test(receiver);
 
