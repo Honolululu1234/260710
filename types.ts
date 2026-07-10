@@ -68,3 +68,13 @@ export interface LLMResponse {
   needs: string[]; // 보완 오행/성향 태그
   picks: Array<{ giftId: string; reason: string }>; // 정확히 3개
 }
+
+/** /api/divine 응답 — 클라이언트 렌더용 */
+export interface DivineResult {
+  fortune: FortuneResult;
+  compat: { relationLabel: string; grade: CompatGrade; senderGanzhi: string } | null;
+  narrative: string;
+  needs: string[];
+  picks: Array<{ gift: Gift; reason: string }>;
+  usedFallback: boolean;
+}

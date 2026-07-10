@@ -1,0 +1,121 @@
+[
+  { "id": "plant-1", "category": "다육·미니화분", "priceTier": "under1", "ohaeng": ["목"], "traits": ["힐링형", "감성형"], "name": "미니 다육식물 화분", "kakaoLink": "https://gift.kakao.com/search/다육식물" },
+  { "id": "plant-2", "category": "다육·미니화분", "priceTier": "1to3", "ohaeng": ["목", "토"], "traits": ["힐링형", "인테리어"], "name": "테이블 야자 공기정화 화분", "kakaoLink": "https://gift.kakao.com/search/공기정화식물" },
+  { "id": "plant-3", "category": "다육·미니화분", "priceTier": "3to5", "ohaeng": ["목"], "traits": ["인테리어", "프리미엄형"], "name": "대형 관엽식물 화분 세트", "kakaoLink": "https://gift.kakao.com/search/관엽식물" },
+
+  { "id": "candle-1", "category": "향초", "priceTier": "under1", "ohaeng": ["화"], "traits": ["감성형", "힐링형"], "name": "미니 소이 캔들", "kakaoLink": "https://gift.kakao.com/search/미니캔들" },
+  { "id": "candle-2", "category": "향초", "priceTier": "1to3", "ohaeng": ["화"], "traits": ["감성형", "디자인형"], "name": "우드윅 대용량 향초", "kakaoLink": "https://gift.kakao.com/search/우드윅캔들" },
+  { "id": "candle-3", "category": "향초", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "감성형"], "name": "조말론 향초 기프트", "kakaoLink": "https://gift.kakao.com/search/조말론캔들" },
+
+  { "id": "diffuser-1", "category": "디퓨저", "priceTier": "under1", "ohaeng": ["수", "화"], "traits": ["감성형", "인테리어"], "name": "리드 디퓨저 소용량", "kakaoLink": "https://gift.kakao.com/search/리드디퓨저" },
+  { "id": "diffuser-2", "category": "디퓨저", "priceTier": "1to3", "ohaeng": ["수", "화"], "traits": ["감성형", "힐링형"], "name": "차량·공간용 디퓨저 세트", "kakaoLink": "https://gift.kakao.com/search/디퓨저세트" },
+  { "id": "diffuser-3", "category": "디퓨저", "priceTier": "3to5", "ohaeng": ["수"], "traits": ["프리미엄형", "감성형"], "name": "브랜드 룸 프래그런스 세트", "kakaoLink": "https://gift.kakao.com/search/룸프래그런스" },
+
+  { "id": "handcream-1", "category": "핸드크림", "priceTier": "under1", "ohaeng": ["수"], "traits": ["실용형", "힐링형"], "name": "미니 핸드크림", "kakaoLink": "https://gift.kakao.com/search/핸드크림" },
+  { "id": "handcream-2", "category": "핸드크림", "priceTier": "1to3", "ohaeng": ["수"], "traits": ["실용형", "감성형"], "name": "록시땅 핸드크림 세트", "kakaoLink": "https://gift.kakao.com/search/록시땅핸드크림" },
+  { "id": "handcream-3", "category": "핸드크림", "priceTier": "3to5", "ohaeng": ["수"], "traits": ["프리미엄형", "실용형"], "name": "핸드·바디 케어 기프트박스", "kakaoLink": "https://gift.kakao.com/search/핸드바디세트" },
+
+  { "id": "lip-1", "category": "립·틴트", "priceTier": "under1", "ohaeng": ["화"], "traits": ["감성형", "실용형"], "name": "데일리 립밤", "kakaoLink": "https://gift.kakao.com/search/립밤" },
+  { "id": "lip-2", "category": "립·틴트", "priceTier": "1to3", "ohaeng": ["화"], "traits": ["감성형", "디자인형"], "name": "베스트셀러 립틴트", "kakaoLink": "https://gift.kakao.com/search/립틴트" },
+  { "id": "lip-3", "category": "립·틴트", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "감성형"], "name": "명품 립스틱 기프트", "kakaoLink": "https://gift.kakao.com/search/명품립스틱" },
+
+  { "id": "tumbler-1", "category": "텀블러", "priceTier": "under1", "ohaeng": ["금", "수"], "traits": ["실용형"], "name": "보온 미니 텀블러", "kakaoLink": "https://gift.kakao.com/search/텀블러" },
+  { "id": "tumbler-2", "category": "텀블러", "priceTier": "1to3", "ohaeng": ["금", "수"], "traits": ["실용형", "디자인형"], "name": "스탠리 보온 텀블러", "kakaoLink": "https://gift.kakao.com/search/스탠리텀블러" },
+  { "id": "tumbler-3", "category": "텀블러", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "실용형"], "name": "스타벅스 보온병 세트", "kakaoLink": "https://gift.kakao.com/search/스타벅스보온병" },
+
+  { "id": "mug-1", "category": "머그컵", "priceTier": "under1", "ohaeng": ["토"], "traits": ["실용형", "감성형"], "name": "감성 머그컵", "kakaoLink": "https://gift.kakao.com/search/머그컵" },
+  { "id": "mug-2", "category": "머그컵", "priceTier": "1to3", "ohaeng": ["토"], "traits": ["디자인형", "감성형"], "name": "핸드메이드 도자기 머그", "kakaoLink": "https://gift.kakao.com/search/도자기머그" },
+  { "id": "mug-3", "category": "머그컵", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "디자인형"], "name": "브랜드 찻잔 세트", "kakaoLink": "https://gift.kakao.com/search/찻잔세트" },
+
+  { "id": "tea-1", "category": "차·티세트", "priceTier": "under1", "ohaeng": ["수"], "traits": ["힐링형", "건강형"], "name": "티백 샘플러", "kakaoLink": "https://gift.kakao.com/search/티백선물" },
+  { "id": "tea-2", "category": "차·티세트", "priceTier": "1to3", "ohaeng": ["수"], "traits": ["힐링형", "감성형"], "name": "블렌딩 티 기프트세트", "kakaoLink": "https://gift.kakao.com/search/블렌딩티세트" },
+  { "id": "tea-3", "category": "차·티세트", "priceTier": "3to5", "ohaeng": ["수"], "traits": ["프리미엄형", "힐링형"], "name": "TWG 프리미엄 티 세트", "kakaoLink": "https://gift.kakao.com/search/TWG티세트" },
+
+  { "id": "coffee-1", "category": "원두·드립백", "priceTier": "under1", "ohaeng": ["화", "목"], "traits": ["실용형", "체험형"], "name": "드립백 커피 세트", "kakaoLink": "https://gift.kakao.com/search/드립백커피" },
+  { "id": "coffee-2", "category": "원두·드립백", "priceTier": "1to3", "ohaeng": ["화", "목"], "traits": ["체험형", "감성형"], "name": "스페셜티 원두 기프트", "kakaoLink": "https://gift.kakao.com/search/스페셜티원두" },
+  { "id": "coffee-3", "category": "원두·드립백", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "체험형"], "name": "핸드드립 도구+원두 세트", "kakaoLink": "https://gift.kakao.com/search/핸드드립세트" },
+
+  { "id": "choco-1", "category": "수제초콜릿", "priceTier": "under1", "ohaeng": ["화"], "traits": ["감성형"], "name": "미니 수제초콜릿", "kakaoLink": "https://gift.kakao.com/search/수제초콜릿" },
+  { "id": "choco-2", "category": "수제초콜릿", "priceTier": "1to3", "ohaeng": ["화"], "traits": ["감성형", "디자인형"], "name": "프랄린 초콜릿 박스", "kakaoLink": "https://gift.kakao.com/search/프랄린초콜릿" },
+  { "id": "choco-3", "category": "수제초콜릿", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "감성형"], "name": "고디바 초콜릿 기프트", "kakaoLink": "https://gift.kakao.com/search/고디바초콜릿" },
+
+  { "id": "dessert-1", "category": "디저트", "priceTier": "under1", "ohaeng": ["토"], "traits": ["감성형"], "name": "마카롱 4구", "kakaoLink": "https://gift.kakao.com/search/마카롱" },
+  { "id": "dessert-2", "category": "디저트", "priceTier": "1to3", "ohaeng": ["토"], "traits": ["감성형", "체험형"], "name": "디저트 케이크 기프트", "kakaoLink": "https://gift.kakao.com/search/디저트케이크" },
+  { "id": "dessert-3", "category": "디저트", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "감성형"], "name": "호텔 디저트 세트", "kakaoLink": "https://gift.kakao.com/search/호텔디저트" },
+
+  { "id": "flower-1", "category": "꽃다발", "priceTier": "under1", "ohaeng": ["목"], "traits": ["감성형"], "name": "미니 꽃다발", "kakaoLink": "https://gift.kakao.com/search/미니꽃다발" },
+  { "id": "flower-2", "category": "꽃다발", "priceTier": "1to3", "ohaeng": ["목"], "traits": ["감성형", "디자인형"], "name": "계절 꽃다발", "kakaoLink": "https://gift.kakao.com/search/꽃다발" },
+  { "id": "flower-3", "category": "꽃다발", "priceTier": "3to5", "ohaeng": ["목"], "traits": ["프리미엄형", "감성형"], "name": "프리미엄 플라워 박스", "kakaoLink": "https://gift.kakao.com/search/플라워박스" },
+
+  { "id": "book-1", "category": "책·북커버", "priceTier": "under1", "ohaeng": ["목"], "traits": ["자기계발형"], "name": "베스트셀러 도서", "kakaoLink": "https://gift.kakao.com/search/도서상품권" },
+  { "id": "book-2", "category": "책·북커버", "priceTier": "1to3", "ohaeng": ["목"], "traits": ["자기계발형", "감성형"], "name": "가죽 북커버+독서대", "kakaoLink": "https://gift.kakao.com/search/북커버" },
+  { "id": "book-3", "category": "책·북커버", "priceTier": "3to5", "ohaeng": ["목"], "traits": ["프리미엄형", "자기계발형"], "name": "전자책 리더기 상품권", "kakaoLink": "https://gift.kakao.com/search/전자책리더기" },
+
+  { "id": "pen-1", "category": "만년필·펜", "priceTier": "under1", "ohaeng": ["금"], "traits": ["실용형"], "name": "고급 젤펜 세트", "kakaoLink": "https://gift.kakao.com/search/고급펜" },
+  { "id": "pen-2", "category": "만년필·펜", "priceTier": "1to3", "ohaeng": ["금"], "traits": ["자기계발형", "디자인형"], "name": "라미 만년필", "kakaoLink": "https://gift.kakao.com/search/라미만년필" },
+  { "id": "pen-3", "category": "만년필·펜", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "완성도"], "name": "몽블랑·워터맨 펜", "kakaoLink": "https://gift.kakao.com/search/몽블랑펜" },
+
+  { "id": "diary-1", "category": "다이어리·노트", "priceTier": "under1", "ohaeng": ["목"], "traits": ["자기계발형", "실용형"], "name": "데일리 노트", "kakaoLink": "https://gift.kakao.com/search/노트" },
+  { "id": "diary-2", "category": "다이어리·노트", "priceTier": "1to3", "ohaeng": ["목"], "traits": ["자기계발형", "디자인형"], "name": "몰스킨 다이어리", "kakaoLink": "https://gift.kakao.com/search/몰스킨다이어리" },
+  { "id": "diary-3", "category": "다이어리·노트", "priceTier": "3to5", "ohaeng": ["목"], "traits": ["프리미엄형", "자기계발형"], "name": "가죽 다이어리 세트", "kakaoLink": "https://gift.kakao.com/search/가죽다이어리" },
+
+  { "id": "speaker-1", "category": "블루투스 스피커", "priceTier": "under1", "ohaeng": ["금"], "traits": ["실용형", "체험형"], "name": "미니 블루투스 스피커", "kakaoLink": "https://gift.kakao.com/search/블루투스스피커" },
+  { "id": "speaker-2", "category": "블루투스 스피커", "priceTier": "1to3", "ohaeng": ["금"], "traits": ["체험형", "디자인형"], "name": "JBL 방수 스피커", "kakaoLink": "https://gift.kakao.com/search/JBL스피커" },
+  { "id": "speaker-3", "category": "블루투스 스피커", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "체험형"], "name": "마샬 블루투스 스피커", "kakaoLink": "https://gift.kakao.com/search/마샬스피커" },
+
+  { "id": "earbuds-1", "category": "무선 이어폰", "priceTier": "under1", "ohaeng": ["금"], "traits": ["실용형"], "name": "블루투스 이어폰", "kakaoLink": "https://gift.kakao.com/search/블루투스이어폰" },
+  { "id": "earbuds-2", "category": "무선 이어폰", "priceTier": "1to3", "ohaeng": ["금"], "traits": ["실용형", "체험형"], "name": "노이즈캔슬링 이어버드", "kakaoLink": "https://gift.kakao.com/search/노이즈캔슬링이어폰" },
+  { "id": "earbuds-3", "category": "무선 이어폰", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "체험형"], "name": "에어팟·버즈 세트", "kakaoLink": "https://gift.kakao.com/search/에어팟" },
+
+  { "id": "light-1", "category": "무드·스마트조명", "priceTier": "under1", "ohaeng": ["화", "금"], "traits": ["감성형", "인테리어"], "name": "무드등", "kakaoLink": "https://gift.kakao.com/search/무드등" },
+  { "id": "light-2", "category": "무드·스마트조명", "priceTier": "1to3", "ohaeng": ["화", "금"], "traits": ["디자인형", "체험형"], "name": "스마트 무드 조명", "kakaoLink": "https://gift.kakao.com/search/스마트조명" },
+  { "id": "light-3", "category": "무드·스마트조명", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "디자인형"], "name": "무나 달조명·디자인 램프", "kakaoLink": "https://gift.kakao.com/search/디자인조명" },
+
+  { "id": "bath-1", "category": "입욕·목욕용품", "priceTier": "under1", "ohaeng": ["수"], "traits": ["힐링형"], "name": "입욕제 세트", "kakaoLink": "https://gift.kakao.com/search/입욕제" },
+  { "id": "bath-2", "category": "입욕·목욕용품", "priceTier": "1to3", "ohaeng": ["수"], "traits": ["힐링형", "감성형"], "name": "러쉬 배쓰밤 기프트", "kakaoLink": "https://gift.kakao.com/search/러쉬배쓰밤" },
+  { "id": "bath-3", "category": "입욕·목욕용품", "priceTier": "3to5", "ohaeng": ["수"], "traits": ["프리미엄형", "힐링형"], "name": "스파 바스 컬렉션", "kakaoLink": "https://gift.kakao.com/search/스파세트" },
+
+  { "id": "aroma-1", "category": "아로마 오일", "priceTier": "under1", "ohaeng": ["수"], "traits": ["힐링형"], "name": "아로마 롤온", "kakaoLink": "https://gift.kakao.com/search/아로마오일" },
+  { "id": "aroma-2", "category": "아로마 오일", "priceTier": "1to3", "ohaeng": ["수"], "traits": ["힐링형", "건강형"], "name": "에센셜 오일+디퓨저", "kakaoLink": "https://gift.kakao.com/search/에센셜오일" },
+  { "id": "aroma-3", "category": "아로마 오일", "priceTier": "3to5", "ohaeng": ["수"], "traits": ["프리미엄형", "힐링형"], "name": "아로마테라피 홈스파 세트", "kakaoLink": "https://gift.kakao.com/search/아로마테라피세트" },
+
+  { "id": "blanket-1", "category": "담요·방한", "priceTier": "under1", "ohaeng": ["토"], "traits": ["실용형", "힐링형"], "name": "극세사 무릎담요", "kakaoLink": "https://gift.kakao.com/search/무릎담요" },
+  { "id": "blanket-2", "category": "담요·방한", "priceTier": "1to3", "ohaeng": ["토"], "traits": ["실용형", "감성형"], "name": "차렵 극세사 블랭킷", "kakaoLink": "https://gift.kakao.com/search/극세사담요" },
+  { "id": "blanket-3", "category": "담요·방한", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "힐링형"], "name": "USB 전기 담요·워머", "kakaoLink": "https://gift.kakao.com/search/전기담요" },
+
+  { "id": "sleep-1", "category": "수면용품", "priceTier": "under1", "ohaeng": ["토"], "traits": ["힐링형", "실용형"], "name": "수면양말", "kakaoLink": "https://gift.kakao.com/search/수면양말" },
+  { "id": "sleep-2", "category": "수면용품", "priceTier": "1to3", "ohaeng": ["토", "수"], "traits": ["힐링형", "건강형"], "name": "수면안대+아이마스크 세트", "kakaoLink": "https://gift.kakao.com/search/수면안대" },
+  { "id": "sleep-3", "category": "수면용품", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "힐링형"], "name": "메모리폼 베개", "kakaoLink": "https://gift.kakao.com/search/메모리폼베개" },
+
+  { "id": "ceramic-1", "category": "도자기 그릇", "priceTier": "under1", "ohaeng": ["토"], "traits": ["실용형", "디자인형"], "name": "도자기 종지 세트", "kakaoLink": "https://gift.kakao.com/search/도자기그릇" },
+  { "id": "ceramic-2", "category": "도자기 그릇", "priceTier": "1to3", "ohaeng": ["토"], "traits": ["디자인형", "감성형"], "name": "핸드메이드 접시 세트", "kakaoLink": "https://gift.kakao.com/search/수제접시" },
+  { "id": "ceramic-3", "category": "도자기 그릇", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "디자인형"], "name": "브랜드 식기 세트", "kakaoLink": "https://gift.kakao.com/search/식기세트" },
+
+  { "id": "wood-1", "category": "우드 트레이·도마", "priceTier": "under1", "ohaeng": ["목", "토"], "traits": ["실용형", "디자인형"], "name": "미니 우드 트레이", "kakaoLink": "https://gift.kakao.com/search/우드트레이" },
+  { "id": "wood-2", "category": "우드 트레이·도마", "priceTier": "1to3", "ohaeng": ["목", "토"], "traits": ["실용형", "감성형"], "name": "원목 도마 세트", "kakaoLink": "https://gift.kakao.com/search/원목도마" },
+  { "id": "wood-3", "category": "우드 트레이·도마", "priceTier": "3to5", "ohaeng": ["목"], "traits": ["프리미엄형", "디자인형"], "name": "월넛 서빙보드 세트", "kakaoLink": "https://gift.kakao.com/search/서빙보드" },
+
+  { "id": "silver-1", "category": "실버 액세서리", "priceTier": "under1", "ohaeng": ["금"], "traits": ["감성형", "디자인형"], "name": "실버 이어링", "kakaoLink": "https://gift.kakao.com/search/실버귀걸이" },
+  { "id": "silver-2", "category": "실버 액세서리", "priceTier": "1to3", "ohaeng": ["금"], "traits": ["감성형", "디자인형"], "name": "실버 목걸이", "kakaoLink": "https://gift.kakao.com/search/실버목걸이" },
+  { "id": "silver-3", "category": "실버 액세서리", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "감성형"], "name": "14K 미니 주얼리", "kakaoLink": "https://gift.kakao.com/search/14k목걸이" },
+
+  { "id": "vase-1", "category": "미니 화병", "priceTier": "under1", "ohaeng": ["금", "토"], "traits": ["디자인형", "감성형"], "name": "미니 유리 화병", "kakaoLink": "https://gift.kakao.com/search/미니화병" },
+  { "id": "vase-2", "category": "미니 화병", "priceTier": "1to3", "ohaeng": ["금", "토"], "traits": ["디자인형", "인테리어"], "name": "메탈 오브제 화병", "kakaoLink": "https://gift.kakao.com/search/오브제화병" },
+  { "id": "vase-3", "category": "미니 화병", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "디자인형"], "name": "디자이너 세라믹 화병", "kakaoLink": "https://gift.kakao.com/search/세라믹화병" },
+
+  { "id": "health-1", "category": "홍삼·건강식품", "priceTier": "under1", "ohaeng": ["토", "화"], "traits": ["건강형"], "name": "홍삼 스틱 미니팩", "kakaoLink": "https://gift.kakao.com/search/홍삼스틱" },
+  { "id": "health-2", "category": "홍삼·건강식품", "priceTier": "1to3", "ohaeng": ["토", "화"], "traits": ["건강형", "실용형"], "name": "정관장 홍삼 세트", "kakaoLink": "https://gift.kakao.com/search/정관장홍삼" },
+  { "id": "health-3", "category": "홍삼·건강식품", "priceTier": "3to5", "ohaeng": ["토"], "traits": ["프리미엄형", "건강형"], "name": "프리미엄 건강 선물세트", "kakaoLink": "https://gift.kakao.com/search/건강식품선물세트" },
+
+  { "id": "vitamin-1", "category": "비타민·영양제", "priceTier": "under1", "ohaeng": ["금"], "traits": ["건강형", "실용형"], "name": "비타민C 미니", "kakaoLink": "https://gift.kakao.com/search/비타민" },
+  { "id": "vitamin-2", "category": "비타민·영양제", "priceTier": "1to3", "ohaeng": ["금"], "traits": ["건강형", "실용형"], "name": "종합비타민 세트", "kakaoLink": "https://gift.kakao.com/search/종합비타민" },
+  { "id": "vitamin-3", "category": "비타민·영양제", "priceTier": "3to5", "ohaeng": ["금"], "traits": ["프리미엄형", "건강형"], "name": "이너뷰티 영양제 기프트", "kakaoLink": "https://gift.kakao.com/search/이너뷰티영양제" },
+
+  { "id": "yoga-1", "category": "요가·홈트", "priceTier": "under1", "ohaeng": ["목", "화"], "traits": ["건강형", "체험형"], "name": "요가 스트랩·밴드", "kakaoLink": "https://gift.kakao.com/search/요가밴드" },
+  { "id": "yoga-2", "category": "요가·홈트", "priceTier": "1to3", "ohaeng": ["목", "화"], "traits": ["건강형", "체험형"], "name": "논슬립 요가매트", "kakaoLink": "https://gift.kakao.com/search/요가매트" },
+  { "id": "yoga-3", "category": "요가·홈트", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "건강형"], "name": "홈트 세트(매트+기구)", "kakaoLink": "https://gift.kakao.com/search/홈트레이닝세트" },
+
+  { "id": "class-1", "category": "원데이클래스", "priceTier": "under1", "ohaeng": ["화", "목"], "traits": ["체험형"], "name": "향수 만들기 원데이 티켓", "kakaoLink": "https://gift.kakao.com/search/원데이클래스" },
+  { "id": "class-2", "category": "원데이클래스", "priceTier": "1to3", "ohaeng": ["화", "토"], "traits": ["체험형", "감성형"], "name": "도자기·베이킹 클래스", "kakaoLink": "https://gift.kakao.com/search/도자기클래스" },
+  { "id": "class-3", "category": "원데이클래스", "priceTier": "3to5", "ohaeng": ["화"], "traits": ["프리미엄형", "체험형"], "name": "쿠킹·플라워 프리미엄 클래스", "kakaoLink": "https://gift.kakao.com/search/쿠킹클래스" }
+]
